@@ -23,28 +23,6 @@ EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Graphoscope.Tests", "tests\Graphoscope.Tests\Graphoscope.Tests.fsproj", "{7DD2BF62-7537-4F99-9A5C-434011D94E2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{9055F8EC-31C0-48B8-92D7-058D9C99C60D}"
-	ProjectSection(SolutionItems) = preProject
-		docs\index.fsx = docs\index.fsx
-		docs\G_Digraph_2_Intro.fsx = docs\G_Digraph_2_Intro.fsx
-		docs\G_FGraph_3_Intro.fsx = docs\G_FGraph_3_Intro.fsx		
-		docs\G_AdjGraph_4_Intro.fsx = docs\G_AdjGraph_4_Intro.fsx		
-		docs\M_1_Degree.fsx = docs\M_1_Degree.fsx
-		docs\M_2_NetworkDensity.fsx = docs\M_2_NetworkDensity.fsx
-		docs\M_3_Loops.fsx = docs\M_3_Loops.fsx		
-		docs\M_4_CentralityMeasures.fsx = docs\M_4_CentralityMeasures.fsx		
-		docs\A_Dijkstra.fsx = docs\A_Dijkstra.fsx
-		docs\A_FloydWarshall.fsx = docs\A_FloydWarshall.fsx
-		docs\A_Louvain.fsx = docs\A_Louvain.fsx
-		docs\A_Component.fsx = docs\A_Component.fsx
-		docs\R_BarabasiAlbert.fsx = docs\R_BarabasiAlbert.fsx
-		docs\R_BollobasRiordan.fsx = docs\R_BollobasRiordan.fsx
-		docs\R_Gilbert.fsx = docs\R_Gilbert.fsx
-		docs\R_RandomGraphs.fsx = docs\R_RandomGraphs.fsx
-		docs\Dockerfile = docs\Dockerfile
-		docs\NuGet.config = docs\NuGet.config
-		docs\_template.html = docs\_template.html
-		docs\_template.ipynb = docs\_template.ipynb
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "reference", "reference", "{A84274B1-1E46-4852-9DB0-2D42BAA9D90B}"
 	ProjectSection(SolutionItems) = preProject
@@ -71,6 +49,8 @@ EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Graphoscope.Benchmark", "tests\Graphoscope.Benchmark\Graphoscope.Benchmark.fsproj", "{1B734B74-3519-4F8F-98AB-46A5FDD9ECCA}"
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Graphoscope.IO", "src\Graphoscope.IO\Graphoscope.IO.fsproj", "{D314B67C-7F07-438D-86C7-8786E0ABA4E6}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Graphoscope.PerformanceComparison", "tests\Graphoscope.PerformanceComparison\Graphoscope.PerformanceComparison.fsproj", "{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -142,6 +122,18 @@ Global
 		{D314B67C-7F07-438D-86C7-8786E0ABA4E6}.Release|x64.Build.0 = Release|Any CPU
 		{D314B67C-7F07-438D-86C7-8786E0ABA4E6}.Release|x86.ActiveCfg = Release|Any CPU
 		{D314B67C-7F07-438D-86C7-8786E0ABA4E6}.Release|x86.Build.0 = Release|Any CPU
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}.Debug|x64.Build.0 = Debug|Any CPU
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}.Debug|x86.Build.0 = Debug|Any CPU
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}.Release|x64.ActiveCfg = Release|Any CPU
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}.Release|x64.Build.0 = Release|Any CPU
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}.Release|x86.ActiveCfg = Release|Any CPU
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -155,6 +147,7 @@ Global
 		{372DEED5-A532-40DC-88EB-E0AAEA78AB5F} = {9055F8EC-31C0-48B8-92D7-058D9C99C60D}
 		{1B734B74-3519-4F8F-98AB-46A5FDD9ECCA} = {CDE30E5D-D1ED-48B7-BB35-DC0C47552D85}
 		{D314B67C-7F07-438D-86C7-8786E0ABA4E6} = {BF24C0CB-D907-4CA6-9093-BBF1EF5FBDD3}
+		{74E8ABA0-9F8D-4FA4-9077-010B3C4EC61E} = {CDE30E5D-D1ED-48B7-BB35-DC0C47552D85}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {59E6A61C-EB4F-4B26-923F-14D2CB4F6F3F}

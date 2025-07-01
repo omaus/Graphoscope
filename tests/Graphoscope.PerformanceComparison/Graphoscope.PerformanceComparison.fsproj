@@ -12,6 +12,7 @@
     <Compile Include="HelperFunctions.fs" />
     <Compile Include="GraphoscopeBenchmark.fs" />
     <Compile Include="QuikGraphBenchmark.fs" />
+    <Compile Include="BenchmarkSettings.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

@@ -310,7 +310,7 @@ module DiGraphs =
         |> DiGraph.addElement 90 () 167 () "90-167"
 
     let n2000e2700 =
-    let res1 =
+        let res1 =
             DiGraph.empty<int,unit,string>
             |> DiGraph.addElement 1 () 2 () "1-2"
             |> DiGraph.addElement 2 () 3 () "2-3"

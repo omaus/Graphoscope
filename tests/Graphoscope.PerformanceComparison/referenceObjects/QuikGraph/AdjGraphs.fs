@@ -3055,6 +3055,6 @@ module AdjGraphs =
             589,1035
             664,844
         ]
-        Seq.concat [edgL1; edgL2; edgL3; edgL4; edgL5; edgL6; edgL7; edgL8; edgL9; edgL10; edgL11, edgL12; edgL13; edgL14; edgL15]
+        Seq.concat [edgL1; edgL2; edgL3; edgL4; edgL5; edgL6; edgL7; edgL8; edgL9; edgL10; edgL11; edgL12; edgL13; edgL14; edgL15]
         |> Seq.iter (fun (s,t) -> graph.AddEdge(TaggedEdge(s,t,$"{s}-{t}")) |> ignore)
         graph

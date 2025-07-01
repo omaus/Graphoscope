@@ -6,9 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="fixtures\Graphoscope\FGraphs.fs" />
-    <Compile Include="fixtures\Graphoscope\DiGraphs.fs" />
-    <Compile Include="fixtures\QuikGraph\AdjGraphs.fs" />
+    <Compile Include="referenceObjects\Graphoscope\FGraphs.fs" />
+    <Compile Include="referenceObjects\Graphoscope\DiGraphs.fs" />
+    <Compile Include="referenceObjects\QuikGraph\AdjGraphs.fs" />
     <Compile Include="HelperFunctions.fs" />
     <Compile Include="GraphoscopeBenchmark.fs" />
     <Compile Include="QuikGraphBenchmark.fs" />

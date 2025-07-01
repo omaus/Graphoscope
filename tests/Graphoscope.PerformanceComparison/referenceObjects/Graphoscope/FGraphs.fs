@@ -3029,9 +3029,9 @@ module FGraphs =
         for i = 1 to 20000 do
             FGraph.addNode i "" graph |> ignore
         for i = 1 to 19999 do
-            FGraph.addEdge i (i + 1) $"{i}-{i + 1}" |> ignore
+            FGraph.addEdge i (i + 1) $"{i}-{i + 1}" graph |> ignore
         for i = 1 to 7000 do
-            FGraph.addEdge 1 (i + 3) $"1-{i + 3}" |> ignore
+            FGraph.addEdge 1 (i + 3) $"1-{i + 3}" graph |> ignore
         graph
 
     let n200000e270000 =
@@ -3039,7 +3039,7 @@ module FGraphs =
         for i = 1 to 200000 do
             FGraph.addNode i "" graph |> ignore
         for i = 1 to 199999 do
-            FGraph.addEdge i (i + 1) $"{i}-{i + 1}" |> ignore
+            FGraph.addEdge i (i + 1) $"{i}-{i + 1}" graph |> ignore
         for i = 1 to 70000 do
-            FGraph.addEdge 1 (i + 3) $"1-{i + 3}" |> ignore
+            FGraph.addEdge 1 (i + 3) $"1-{i + 3}" graph |> ignore
         graph

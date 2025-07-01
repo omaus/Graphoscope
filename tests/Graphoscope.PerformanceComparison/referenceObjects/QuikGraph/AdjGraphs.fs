@@ -3058,3 +3058,23 @@ module AdjGraphs =
         Seq.concat [edgL1; edgL2; edgL3; edgL4; edgL5; edgL6; edgL7; edgL8; edgL9; edgL10; edgL11; edgL12; edgL13; edgL14; edgL15]
         |> Seq.iter (fun (s,t) -> graph.AddEdge(TaggedEdge(s,t,$"{s}-{t}")) |> ignore)
         graph
+
+    let n20000e27000 =
+        let graph = AdjacencyGraph<int,TaggedEdge<int,string>>(true)
+        for i = 1 to 20000 do
+            graph.AddVertex i |> ignore
+        for i = 1 to 19999 do
+            graph.AddEdge(TaggedEdge(i,i + 1,$"{i}-{i + 1}")) |> ignore
+        for i = 1 to 7000 do
+            graph.AddEdge(TaggedEdge(1,i + 2,$"1-{i + 2}")) |> ignore
+        graph
+
+    let n200000e270000 =
+        let graph = AdjacencyGraph<int,TaggedEdge<int,string>>(true)
+        for i = 1 to 200000 do
+            graph.AddVertex i |> ignore
+        for i = 1 to 199999 do
+            graph.AddEdge(TaggedEdge(i,i + 1,$"{i}-{i + 1}")) |> ignore
+        for i = 1 to 70000 do
+            graph.AddEdge(TaggedEdge(1,i + 2,$"1-{i + 2}")) |> ignore
+        graph

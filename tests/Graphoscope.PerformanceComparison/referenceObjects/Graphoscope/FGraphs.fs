@@ -3023,3 +3023,23 @@ module FGraphs =
         |]
         |> Array.iter (fun (s,t) -> FGraph.addEdge s t $"{s}-{t}" graph |> ignore)
         graph
+
+    let n20000e27000 =
+        let graph = FGraph.empty<int,string,string>
+        for i = 1 to 20000 do
+            FGraph.addNode i "" graph |> ignore
+        for i = 1 to 19999 do
+            FGraph.addEdge i (i + 1) $"{i}-{i + 1}" |> ignore
+        for i = 1 to 7000 do
+            FGraph.addEdge 1 (i + 3) $"1-{i + 3}" |> ignore
+        graph
+
+    let n200000e270000 =
+        let graph = FGraph.empty<int,string,string>
+        for i = 1 to 200000 do
+            FGraph.addNode i "" graph |> ignore
+        for i = 1 to 199999 do
+            FGraph.addEdge i (i + 1) $"{i}-{i + 1}" |> ignore
+        for i = 1 to 70000 do
+            FGraph.addEdge 1 (i + 3) $"1-{i + 3}" |> ignore
+        graph
